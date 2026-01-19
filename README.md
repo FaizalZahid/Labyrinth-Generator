@@ -4,7 +4,9 @@ A labyrinth (maze) generator. Open-source code from a section (Self-Help) in Hou
 Also includes labyrinth solver!
 
 Example of usage:
-```
+```html
+<!--more code here...-->
+
 <body>
     <div>
         <p id="please-wait">Generating labyrinth...</p>
@@ -35,4 +37,25 @@ Example of usage:
     </script>
 
 </body>
+
+<!--more code here...-->
+```
+To change the color for the maze, head to `maze.js` and you will find this line:
+```javascript
+//more code here...
+
+self.ctx.strokeStyle = "rgb(255, 255, 255)";
+self.ctx.fillStyle = "rgb(0, 0, 0)";
+
+//more code here...
+```
+
+And for the solution drawing color, on this line:
+```javascript
+//more code here...
+
+drawSolution: function(path) {
+  self.ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+
+//more code here...
 ```

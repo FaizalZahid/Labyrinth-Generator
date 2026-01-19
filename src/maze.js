@@ -35,7 +35,7 @@ var Maze = function(doc, elemId) {
     },
 
     drawSolution: function(path) {
-      self.ctx.fillStyle = "rgba(252, 191, 71, 0.8)";
+      self.ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
 
       for (var i = 0; i < path.length; i++) {
         (function() {
